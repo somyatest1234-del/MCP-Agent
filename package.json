@@ -1,0 +1,22 @@
+{
+  "name": "connect-ai-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env --loader ts-node/esm src/demo.ts",
+    "build": "tsc",
+    "start": "node dist/demo.js"
+  },
+  "dependencies": {
+    "@mastra/core": "^1.0.0",
+    "@mastra/memory": "^1.0.0",
+    "@mastra/libsql": "^1.0.0",
+    "@mastra/mcp": "^1.0.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.10.0"
+  }
+}
